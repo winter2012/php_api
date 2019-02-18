@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口测试</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="page-header text-center">接口测试<small>Winter</small></h1>
+    <form action="controller/form.php" method="post" enctype="multipart/form-data">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="username" class="col-sm-4 control-label">用户名</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="username" placeholder="username">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="nickname" class="col-sm-4 control-label">昵称</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="nickname" placeholder="nickname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">密码</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="password" placeholder="password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-4 control-label">身份证信息</label>
+                <div class="col-sm-4">
+                    <input type="file" name="id_card" value="ID Card"/>
+                </div>
+            </div>
+            <h5 class="text-center" style="display: none" id="message"></h5>
+            <div class="btn-group-justified">
+                <div class="col-sm-offset-4 col-sm-4">
+                    <button type="submit" class="btn btn-success btn-sm btn-block">提交</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
